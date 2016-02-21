@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Сервіс Обліку Студентів</title>
+  <meta name="description" value="Система Обліку Студентів Навчального Закладу" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap-theme.css">
+
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+  <!-- Start Container -->
+  <div class="container">
+
+	<!-- Start Header -->
+	<div class="row" id="header"> 
+	  <div class="col-xs-8">
+		<h1>Сервіс Обліку Студентів</h1>
+	  </div>
+	  <div class="col-xs-4" id="group-selector">
+		<strong>Група:</strong>
+		<select>
+		  <option value="">Усі Студенти</option>
+		  <option value="">Мтм-21, Віталій Подоба</option>
+		  <option value="">Мтм-22, Андрій Петров</option>
+		</select>
+	  </div>
+	</div>
+	<!-- End Header -->
+
+	<!-- Start subheader -->
+	<div class="row" id="sub-header"> 
+	  <div class="col-xs-12">
+		<ul class="nav nav-tabs" role="tablist">
+		  <li role="presentation"><a href="#">Студенти</a></li>
+		  <li role="presentation" class="active"><a href="#">Відвідування</a></li>
+		  <li role="presentation"><a href="#">Групи</a></li>
+		</ul>
+	  </div>
+	</div>
+	<!-- End subheader -->
+
+<h2>Форма редагування студента</h2>    
+
+	<!-- Start Content Columns -->
+
+<form action="." method="post" enctype="multipart/form-data" role="form" class="form-horizontal">
+
+  <div class="form-group">
+	<label for="first_name" class="col-sm-2 control-label">Ім'я*</label>
+	<div class="col-sm-10">
+	  <input type="text" value="" name="first_name" id="first_name" class="form-control" />
+	</div>
+  </div>
+  <div class="form-group">
+	<label for="last_name" class="col-sm-2 control-label">Прізвище*</label>
+	<div class="col-sm-10">
+	  <input type="text" value="" name="last_name" id="last_name" placeholder="Введіть ваше прізвище" class="form-control" />
+	</div>
+  </div>
+  <div class="form-group">
+	<label for="middle_name"class="col-sm-2 control-label">Побатькові</label>
+	<div class="col-sm-10">
+	  <input type="text" value="" name="middle_name" id="middle_name" class="form-control" />
+	</div>
+  </div>
+  <div class="form-group">
+	<label for="ticket"class="col-sm-2 control-label">№ Білету*</label>
+	<div class="col-sm-10">
+	  <input type="text" value="" name="ticket" id="ticket" class="form-control" />
+	</div>
+  </div>
+  <div class="form-group">
+	<label for="birthday"class="col-sm-2 control-label">Дата народження*</label>
+	<div class="col-sm-10">
+	  <input type="text" value="" name="birthday" id="birthday" placeholder="Напр. 1984-12-30" class="form-control dateinput" />
+	</div>
+  </div>
+
+
+
+  <div class="form-group">
+	<label for="photo"class="col-sm-2 control-label">Фото</label>
+	<div class="col-sm-10">
+	  <input type="file" value="" name="photo" id="photo" class="form-control" />
+	</div>
+  </div>
+
+  <div class="form-group">
+	<label for="student_group"class="col-sm-2 control-label">Група*</label>
+	<div class="col-sm-10">
+	<select name="student_group" id="student_group" class="form-control">
+		<option value="1" selected="1" >МтМ-21</option>
+		<option value="1" selected="1" >МтМ-22</option>
+		<option value="1" selected="1" >МтМ-23</option>
+	</select>
+	</div>
+  </div>
+  <div class="form-group">
+	<label for="notes" class="col-sm-2 control-label">Додаткові нотатки</label>
+	<div class="col-sm-10">
+	  <textarea name="notes" id="notes" class="form-control"></textarea>
+	</div>
+  </div>
+  <div class="form-group">
+	<label class="col-sm-2 control-label"></label>
+	<div class="col-sm-10">
+	  <input type="submit" value="Зберегти" name="add_button" class="btn btn-primary" />
+	  <button type="submit" name="cancel_button" class="btn btn-link">Скасувати</button>
+	</div>
+  </div>
+</form>
+
+	<!-- End Students Listing -->
+		
+	  </div>
+	</div>
+	<!-- End Content Columns -->
+	
+	<!-- Start Footer -->
+	<div class="row" id="footer">
+	  <div class="col-xs-12">
+		&copy; 2014 Сервіс Обліку Студентів
+	  </div>
+	</div>
+	<!-- End Footer -->
+
+  </div>
+  <!-- End Container -->
+
+  <!-- Javascripts Inclusion -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</body>
+</html>
